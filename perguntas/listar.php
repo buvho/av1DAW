@@ -37,7 +37,10 @@ $i = 0;
                 <input type=\"hidden\" name=\"linha\" value=\"$i\">
                 <button type=\"submit\" class=\"btn btn-primary\">Responder</button>
             </form></th>
-            <th> <button type=\"button\" class=\"btn btn-info\"> Ver Respostas </button> </th>
+            <th>
+                <form action=\"verRespostas.php\" method=\"POST\">
+                <input type=\"hidden\" name=\"linha\" value=\"$i\">
+                <button type=\"submit\" class=\"btn btn-info\">Ver Respostas</button>
             </tr>");
             $i += 1;
         }
